@@ -9,4 +9,6 @@ end
 Entao(/^o retorno dele será uma CIP cadastrada com sucesso$/) do
   puts 'CIP criada : ' + @post_message.parsed_response['cip'].to_s
   expect(@post_message.code).to eq 200
+
+  puts @db.select('select * from "MPac" where "MPac_cip" = 119995')
 end
