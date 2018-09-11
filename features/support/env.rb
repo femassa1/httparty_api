@@ -10,5 +10,5 @@ require "oci8"
 
 Before do |feature|
   @api_helper = API_helper.new
-  @db = DB_connect.new
+    #@db = DB_connect.new
 end
