@@ -1,4 +1,4 @@
-require 'rspec'
+require "rspec"
 require "cucumber"
 require "httparty"
 require "httparty/request"
@@ -7,3 +7,6 @@ require "faker"
 require "cpf_faker"
 require "documentos_br"
 
+Before do |feature|
+  @api_helper = API_helper.new
+end

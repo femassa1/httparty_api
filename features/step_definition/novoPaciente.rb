@@ -3,13 +3,10 @@ Dado(/^que eu tenha uma massa de dados do paciente$/) do
 end
 
 E(/^faça um POST no endpoint de paciente$/) do
-  @post_message =
-    HTTParty.post 'https://gliese-api-dev.azure-api.net/patients/rest/paciente',
-                  body: @body2.to_json,
-                  headers: {'Content-Type' => 'application/json'}
+  @post_message = @api_helper.POST('https://gliese-api-dev.azure-api.net/patients/rest/paciente', @body2.to_json)
 end
 
 Entao(/^o retorno dele será uma CIP cadastrada com sucesso$/) do
-  puts @post_message.parsed_response
+  puts 'CIP criada : ' + @post_message.parsed_response['cip'].to_s
   expect(@post_message.code).to eq 200
 end
