@@ -41,6 +41,8 @@ GEM
     multi_json (1.13.1)
     multi_test (0.1.2)
     multi_xml (0.6.0)
+    report_builder (1.8)
+      json (>= 1.8.1)
     rspec (3.8.0)
       rspec-core (~> 3.8.0)
       rspec-expectations (~> 3.8.0)
@@ -67,6 +69,7 @@ DEPENDENCIES
   faker
   httparty
   json
+  report_builder
   rspec
   ruby-oci8 (~> 2.2, >= 2.2.2)
 

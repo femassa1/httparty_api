@@ -3,7 +3,7 @@ Dado(/^que eu tenha uma massa de dados do paciente$/) do
 end
 
 E(/^faça um POST no endpoint de paciente$/) do
-  @post_message = @api_helper.POST('https://gliese-api-dev.azure-api.net/patients/rest/paciente', @body2.to_json)
+  @post_message = @API_helper.POST('https://gliese-api-dev.azure-api.net/patients/rest/paciente', @body2.to_json)
 end
 
 Entao(/^o retorno dele será uma CIP cadastrada com sucesso$/) do

@@ -1,0 +1,78 @@
+[
+  {
+    "uri": "features/specifications/novoPaciente.feature",
+    "id": "criando-novo-paciente",
+    "keyword": "Funcionalidade",
+    "name": "Criando novo paciente",
+    "description": "  Eu como usuario do gliese\n  Desejo cadastrar um novo paciente\n  Para utilza-lo nos testes",
+    "line": 3,
+    "elements": [
+      {
+        "id": "criando-novo-paciente;criando-paciente",
+        "keyword": "Cenario",
+        "name": "Criando paciente",
+        "description": "",
+        "line": 10,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regressao",
+            "line": 9
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/env.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que eu tenha uma massa de dados do paciente",
+            "line": 12,
+            "match": {
+              "location": "features/step_definition/novoPaciente.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 981510000
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "faça um POST no endpoint de paciente",
+            "line": 13,
+            "match": {
+              "location": "features/step_definition/novoPaciente.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 846135000
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "o retorno dele será uma CIP cadastrada com sucesso",
+            "line": 14,
+            "output": [
+              "CIP criada : 7657777651"
+            ],
+            "match": {
+              "location": "features/step_definition/novoPaciente.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3697000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
