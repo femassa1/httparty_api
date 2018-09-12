@@ -68,7 +68,7 @@ DEPENDENCIES
   documentos_br
   faker
   httparty
-  json
+  json (= 2.1.0)
   report_builder
   rspec
   ruby-oci8 (~> 2.2, >= 2.2.2)
