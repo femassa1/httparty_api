@@ -12,5 +12,5 @@ ReportBuilder.configure do |config|
   config.color = 'indigo'
   config.additional_info = {'Project name' => 'Gliese API', :Platform => 'New', 'Report generated' => time}
 end
-
+ 
 ReportBuilder.build_report
