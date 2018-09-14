@@ -3,7 +3,7 @@ Dado(/^que eu tenha uma massa de dados do paciente$/) do
 end
 
 E(/^faca um POST no endpoint de paciente$/) do
-  @post_message = @API_helper.GET('http://jsonplaceholder.typicode.com/posts') 
+  @post_message = @API_helper.GET('http://jsonplaceholder.typicode.com/posts')
 end
 
 Entao(/^o retorno dele será uma CIP cadastrada com sucesso$/) do
