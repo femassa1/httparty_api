@@ -10,5 +10,5 @@ Funcionalidade: Criando novo paciente
   Cenario: Criando paciente
 
     Dado que eu tenha uma massa de dados do paciente
-    E faça um POST no endpoint de paciente
+    E faça um POST no endpoint de paciente 
     Entao o retorno dele será uma CIP cadastrada com sucesso
