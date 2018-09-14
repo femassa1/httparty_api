@@ -4,7 +4,7 @@ Funcionalidade: Criando novo paciente
 
   Eu como usuario do gliese
   Desejo cadastrar um novo paciente
-  Para utilza-lo nos testes
+  Para utilza-lo nos testes 
 
   @regressao
   Cenario: Criando paciente
